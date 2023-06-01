@@ -7,23 +7,29 @@ import Title from "../title/title"
 const Category = ({titleName, titleIcon, titleDesc}: {titleName: string, titleIcon: string, titleDesc: string}) => {
     return (
         <Box py={"25px"} >
-            <Box mb={"10px"} >
+            <Box display={"flex"} w={"100%"} justifyContent={"center"} mb={"10px"} >
                 <Title title={titleName} icon={titleIcon} desc={titleDesc} />
             </Box>
-            <Swiper slidesPerView={3.1} className="category">
-                <SwiperSlide>
+            <Box display={"flex"} w={"100%"} justifyContent={"center"} >
+                <Box display={"flex"} flexFlow={"row wrap"} gap={"15px 12px"} justifyContent={"center"} >
                     <Card/>
-                </SwiperSlide>
-                <SwiperSlide>
                     <Card/>
-                </SwiperSlide>
-                <SwiperSlide>
                     <Card/>
-                </SwiperSlide>
-                <SwiperSlide>
                     <Card/>
-                </SwiperSlide>
-            </Swiper>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </Box>
+            </Box>
         </Box>
     )
 }
