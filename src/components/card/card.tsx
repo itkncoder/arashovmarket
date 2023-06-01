@@ -20,13 +20,13 @@ const Card = () => {
                 </Box>
                 <Box m={"0 0 2.5px 0"} >
                     <Button p={"5px 10px"} _hover={{bg: "#B88400"}} rounded={"3.5px"} bg={"#D79B00"} height={"fit-content"} width={"fit-content"} size={"sm"} >
-                        <Text fontSize={"11px"} pr={"2px"} >Savatga</Text>
+                        <Text fontSize={"12px"} pr={"2px"} >Savatga</Text>
                         <FontAwesomeIcon style={{fontSize: "10px"}} icon={faShoppingCart} />
                     </Button>
                 </Box>
             </Box>
-            <Box bg={"#D79B00"} shadow={"lg"} top={"5px"} rounded={"3px"} p={"0 6px"} right={"5px"} position={"absolute"} >
-                <Text fontSize={"11px"} >Yangi</Text>
+            <Box bg={"#D79B00"} shadow={"lg"} top={"8px"} rounded={"3px"} p={"0 6px"} right={"8px"} position={"absolute"} >
+                <Text fontSize={"12px"} >Yangi</Text>
             </Box>
         </Box>
     )
