@@ -6,7 +6,7 @@ import React from 'react'
 const Index = () => {
     return (
         <Layout>
-            <Box px={"8px"} >
+            <Box px={"10px"} >
                 <Box>
                     <Tabs isFitted variant='unstyled'>
                         <TabList>
