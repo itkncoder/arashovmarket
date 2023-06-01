@@ -7,10 +7,10 @@ const Title = ({title, icon, desc}: {title: string, icon: string, desc: string})
         <Box display={"flex"} flexDirection={"column"} alignItems={"center"} >
             <Box display={"flex"} alignItems={"center"} gap={"2px"}>
                 <Image style={{width: "20px", height: "20px"}} src={icon} alt={title} width={32} height={32} />
-                <Text fontWeight={700} fontSize={"18px"} >{title}</Text>
+                <Text fontWeight={700} fontSize={"22px"} >{title}</Text>
             </Box>
             <Box mt={"-5px"} >
-                <Text fontSize={"14px"} color={"#959595"} >{desc}</Text>
+                <Text color={"#959595"} >{desc}</Text>
             </Box>
         </Box>
     )

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Card = () => {
     return (
-        <Box position={"relative"} rounded={"12px"} w={"fit-content"} bg={"#111111"} border={"1px solid #494949"} p={"10px"} >
+        <Box position={"relative"} rounded={"12px"} w={"fit-content"} bg={"#111111"} border={"1px solid #494949"} p={"8px"} >
             <Box>
                 <Image style={{width: "145px", height: "105px", borderRadius: "10px 10px 4px 4px"}} alt='siu' width={200} height={120} src={"https://foodbay.com/wiki/wp-content/uploads/2020/09/prev_6d7171.jpg"} />
             </Box>
@@ -19,7 +19,7 @@ const Card = () => {
                     <Text mt={"-3px"} fontSize={"12px"} >140.<span style={{fontSize: "9px", color: "#959595"}} >000</span><span style={{fontSize: "12px", color: "#D79B00"}} > so'm</span></Text>
                 </Box>
                 <Box m={"0 0 2.5px 0"} >
-                    <Button p={"4px 10px"} _hover={{bg: "#B88400"}} rounded={"3.5px"} bg={"#D79B00"} height={"fit-content"} width={"fit-content"} size={"sm"} >
+                    <Button p={"5px 12px"} _hover={{bg: "#B88400"}} rounded={"3.5px"} bg={"#D79B00"} height={"fit-content"} width={"fit-content"} size={"sm"} >
                         <Text fontSize={"11px"} pr={"2px"} >Savatga</Text>
                         <FontAwesomeIcon style={{fontSize: "10px"}} icon={faShoppingCart} />
                     </Button>
