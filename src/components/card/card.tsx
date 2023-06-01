@@ -10,8 +10,8 @@ const Card = () => {
                 <Image style={{width: "150px", height: "110px", borderRadius: "10px 10px 4px 4px"}} alt='siu' width={200} height={130} src={"https://foodbay.com/wiki/wp-content/uploads/2020/09/prev_6d7171.jpg"} />
             </Box>
             <Box>
-                <Text pt={"3px"} fontWeight={700}>Mol go'shti</Text>
-                <Text fontSize={"13px"} mt={"-3px"} color={"#959595"} >Lorem ipsum dolor...</Text>
+                <Text pt={"3px"} fontWeight={700} textOverflow={"ellipsis"} overflow={"hidden"} whiteSpace={"nowrap"} maxW={"120px"} >Mol go'shti</Text>
+                <Text fontSize={"13px"} mt={"-3px"} color={"#959595"} textOverflow={"ellipsis"} overflow={"hidden"} whiteSpace={"nowrap"} maxW={"130px"} >Lorem ipsum dolor sit amet</Text>
             </Box>
             <Box mt={"5px"} display={"flex"} justifyContent={"space-between"} alignItems={"end"} >
                 <Box>
@@ -19,7 +19,7 @@ const Card = () => {
                     <Text mt={"-3px"} fontSize={"13px"} >140.<span style={{fontSize: "10px", color: "#959595"}} >000</span><span style={{fontSize: "13px", color: "#D79B00"}} > so'm</span></Text>
                 </Box>
                 <Box m={"0 0 2.5px 0"} >
-                    <Button p={"5px 12px"} _hover={{bg: "#B88400"}} rounded={"3.5px"} bg={"#D79B00"} height={"fit-content"} width={"fit-content"} size={"sm"} >
+                    <Button p={"5px 10px"} _hover={{bg: "#B88400"}} rounded={"3.5px"} bg={"#D79B00"} height={"fit-content"} width={"fit-content"} size={"sm"} >
                         <Text fontSize={"11px"} pr={"2px"} >Savatga</Text>
                         <FontAwesomeIcon style={{fontSize: "10px"}} icon={faShoppingCart} />
                     </Button>
