@@ -7,7 +7,7 @@ const Card = () => {
     return (
         <Box position={"relative"} rounded={"12px"} w={"fit-content"} bg={"#111111"} border={"1px solid #494949"} p={"8px"} >
             <Box>
-                <Image style={{width: "165px", height: "115px", borderRadius: "10px 10px 4px 4px"}} alt='siu' width={200} height={150} src={"https://foodbay.com/wiki/wp-content/uploads/2020/09/prev_6d7171.jpg"} />
+                <Image style={{width: "160px", height: "115px", borderRadius: "10px 10px 4px 4px"}} alt='siu' width={200} height={150} src={"https://foodbay.com/wiki/wp-content/uploads/2020/09/prev_6d7171.jpg"} />
             </Box>
             <Box>
                 <Text pt={"3px"} fontWeight={700} textOverflow={"ellipsis"} overflow={"hidden"} whiteSpace={"nowrap"} maxW={"120px"} >Mol go'shti</Text>
