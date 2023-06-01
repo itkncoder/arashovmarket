@@ -10,8 +10,8 @@ const Card = () => {
                 <Image style={{width: "150px", height: "110px", borderRadius: "10px 10px 4px 4px"}} alt='siu' width={200} height={130} src={"https://foodbay.com/wiki/wp-content/uploads/2020/09/prev_6d7171.jpg"} />
             </Box>
             <Box>
-                <Text pt={"3px"} fontSize={"15px"} fontWeight={700}>Mol go'shti</Text>
-                <Text fontSize={"12px"} mt={"-3px"} color={"#959595"} >Lorem ipsum dolor...</Text>
+                <Text pt={"3px"} fontWeight={700}>Mol go'shti</Text>
+                <Text fontSize={"13px"} mt={"-3px"} color={"#959595"} >Lorem ipsum dolor...</Text>
             </Box>
             <Box mt={"5px"} display={"flex"} justifyContent={"space-between"} alignItems={"end"} >
                 <Box>
