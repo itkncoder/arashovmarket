@@ -11,7 +11,7 @@ const Category = ({titleName, titleIcon, titleDesc}: {titleName: string, titleIc
                 <Title title={titleName} icon={titleIcon} desc={titleDesc} />
             </Box>
             <Box display={"flex"} w={"100%"} justifyContent={"center"} >
-                <Box display={"flex"} flexFlow={"row wrap"} gap={"15px 12px"} justifyContent={"center"} >
+                <Box display={"flex"} flexFlow={"row wrap"} gap={"15px 10px"} justifyContent={"center"} >
                     <Card/>
                     <Card/>
                     <Card/>

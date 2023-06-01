@@ -7,7 +7,7 @@ const Card = () => {
     return (
         <Box position={"relative"} rounded={"12px"} w={"fit-content"} bg={"#111111"} border={"1px solid #494949"} p={"8px"} >
             <Box>
-                <Image style={{width: "160px", height: "115px", borderRadius: "10px 10px 4px 4px"}} alt='siu' width={200} height={150} src={"https://foodbay.com/wiki/wp-content/uploads/2020/09/prev_6d7171.jpg"} />
+                <Image style={{width: "155px", height: "115px", borderRadius: "10px 10px 4px 4px"}} alt='siu' width={200} height={150} src={"https://foodbay.com/wiki/wp-content/uploads/2020/09/prev_6d7171.jpg"} />
             </Box>
             <Box>
                 <Text pt={"3px"} fontWeight={700} textOverflow={"ellipsis"} overflow={"hidden"} whiteSpace={"nowrap"} maxW={"120px"} >Mol go'shti</Text>
@@ -16,10 +16,10 @@ const Card = () => {
             <Box mt={"5px"} display={"flex"} justifyContent={"space-between"} alignItems={"end"} >
                 <Box>
                     <Text fontSize={"18px"} >1<span style={{color: "#D79B00"}} >kg</span></Text>
-                    <Text mt={"-3px"} >140.<span style={{fontSize: "13px", color: "#959595"}} >000</span><span style={{fontSize: "13px", color: "#D79B00"}} > so'm</span></Text>
+                    <Text fontSize={"15px"} mt={"-3px"} >140.<span style={{fontSize: "12px", color: "#959595"}} >000</span><span style={{fontSize: "13px", color: "#D79B00"}} > so'm</span></Text>
                 </Box>
                 <Box m={"0 0 2.5px 0"} >
-                    <Button p={"4px 10px"} _hover={{bg: "#B88400"}} rounded={"3.5px"} bg={"#D79B00"} height={"fit-content"} width={"fit-content"} size={"sm"} >
+                    <Button p={"4px 8px"} _hover={{bg: "#B88400"}} rounded={"3.5px"} bg={"#D79B00"} height={"fit-content"} width={"fit-content"} size={"sm"} >
                         <Text fontSize={"12px"} pr={"2px"} >Savatga</Text>
                         <FontAwesomeIcon style={{fontSize: "10px"}} icon={faShoppingCart} />
                     </Button>
