@@ -10,15 +10,12 @@ const Cart = () => {
         <Layout>
             <Box>
                 <Box mb={"15px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
-                    <Text fontSize={"20px"} fontWeight={700} ><FontAwesomeIcon icon={faShoppingCart} /> Savatcha:</Text>
                     <Box display={"flex"} gap={"15px"} justifyContent={"end"} alignItems={"center"}>
                         <Link href={"/"}>
                             <Button size={"sm"} display={"flex"} justifyContent={"center"} gap={"5px"} alignItems={"center"} >Ortga <FontAwesomeIcon icon={faRightFromBracket} /></Button>
                         </Link>
-                        <Link href={"/"}>
-                            <Text _hover={{textDecoration: "underline"}}>Admin <FontAwesomeIcon icon={faUser} /> </Text>
-                        </Link>
                     </Box>
+                    <Text fontSize={"20px"} fontWeight={700} ><FontAwesomeIcon icon={faShoppingCart} /> Savatcha</Text>
                 </Box>
                 <Box mb={"20px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
                     <Text fontSize={"14px"} fontWeight={700} ><FontAwesomeIcon icon={faBasketShopping} /> Maxsulotlar: 3ta</Text>
