@@ -5,7 +5,7 @@ import Head from "next/head"
 
 const Layout = ({children}: {children: JSX.Element}) => {
     return (
-        <Box minH={"100vh"} bg={"#1E1E1E"} >
+        <Box px={"10px"} minH={"100vh"} bg={"#1E1E1E"} >
             <Head>
                 <title>Arashov Market</title>
             </Head>

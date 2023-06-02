@@ -1,5 +1,3 @@
-import { Swiper, SwiperSlide } from "swiper/react"
-import "swiper/css"
 import Card from "../card/card"
 import { Box } from "@chakra-ui/react"
 import Title from "../title/title"
