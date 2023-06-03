@@ -26,7 +26,7 @@ const Checkout = () => {
         let mes = `<b>#zakaz</b>\n`
 
         cartItems.map((i: any) => {
-            mes += `<b>-- ${i.title} - ${i.counter} - ${i.price}</b>\n`
+            mes += `<b>-- ${i.title} - ${i.counter} - ${i.price} so'm</b>\n`
         })
 
         mes += `\n<b>Ism: ${inputs.ism}</b>\n`
