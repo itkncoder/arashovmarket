@@ -27,6 +27,7 @@ const Checkout = () => {
 
         cartItems.map((i: any) => {
             mes += `<b>-- ${i.title} - ${i.counter} - ${i.price} so'm</b>\n`
+            mes += `<a href=${i.image}>RASM</a>`
         })
 
         mes += `\n<b>Ism: ${inputs.ism}</b>\n`
