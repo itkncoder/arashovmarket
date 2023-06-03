@@ -1,8 +1,13 @@
 import Card from "../card/card"
 import { Box } from "@chakra-ui/react"
 import Title from "../title/title"
+import { useContext } from "react"
+import { Context } from "@/pages/_app"
 
 const Category = ({titleName, titleIcon, titleDesc}: {titleName: string, titleIcon: string, titleDesc: string}) => {
+
+    const {allProducts} = useContext(Context)
+
     return (
         <Box py={"25px"} >
             <Box display={"flex"} w={"100%"} justifyContent={"center"} mb={"10px"} >
@@ -10,22 +15,13 @@ const Category = ({titleName, titleIcon, titleDesc}: {titleName: string, titleIc
             </Box>
             <Box display={"flex"} w={"100%"} justifyContent={"center"} >
                 <Box display={"flex"} flexFlow={"row wrap"} gap={"15px 10px"} justifyContent={"center"} >
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    {
+                        allProducts.map((i: any) => {
+                            if (titleName == i.category) {
+                                return <Card i={i} />
+                            }
+                        })
+                    }
                 </Box>
             </Box>
         </Box>

@@ -4,8 +4,23 @@ import { Box, Button, Text } from "@chakra-ui/react"
 import { faBasketShopping, faCreditCard, faPerson, faRightFromBracket, faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Link from "next/link"
+import { useContext, useEffect, useState } from "react"
+import { Context } from "./_app"
 
 const Cart = () => {
+
+    const { cartItems } = useContext(Context)
+
+    const [count, setCount] = useState<number>(0)
+
+    useEffect(() => {
+        let countTest = 0
+        cartItems.map((i: any) => {
+            countTest = countTest + i.price
+        })
+        setCount(countTest)
+    }, [cartItems])
+
     return (
         <Layout>
             <Box>
@@ -18,14 +33,24 @@ const Cart = () => {
                     <Text fontSize={"20px"} fontWeight={700} ><FontAwesomeIcon icon={faShoppingCart} /> Savatcha</Text>
                 </Box>
                 <Box mb={"20px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
-                    <Text fontSize={"14px"} fontWeight={700} ><FontAwesomeIcon icon={faBasketShopping} /> Maxsulotlar: 3ta</Text>
-                    <Text fontSize={"14px"} fontWeight={700}><FontAwesomeIcon icon={faCreditCard} /> To'liq narx: 280.000 so'm</Text>
+                    <Text fontSize={"15px"} fontWeight={700} ><FontAwesomeIcon icon={faBasketShopping} /> Maxsulotlar: {cartItems.length}ta</Text>
+                    <Text fontSize={"15px"} fontWeight={700}><FontAwesomeIcon icon={faCreditCard} /> To'liq narx: {count} so'm</Text>
                 </Box>
                 <Box display={"flex"} flexFlow={"row wrap"} gap={"15px 10px"} justifyContent={"center"}>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    {
+                        cartItems.map((i: any) => {
+                            return <Card i={i} count={i.counter} />
+                        })
+                    }
+                    {
+                        !cartItems.length && 
+                        <Box display={"flex"} flexDirection={"column"} alignItems={"center"} my={"20px"} >
+                            <Text fontSize={"18px"} >Savat bo'sh!</Text> 
+                            <Link href={"/"}>
+                                <Button size={"sm"}>Maxsulotlarni ko'rish</Button>
+                            </Link>
+                        </Box>
+                    }
                 </Box>
                 <Box mt={"35px"} display={"flex"} justifyContent={"center"}>
                     <Link href={"/checkout"}>
