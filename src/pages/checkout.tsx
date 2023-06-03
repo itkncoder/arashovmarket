@@ -36,7 +36,7 @@ const Checkout = () => {
         mes += `<b>Username: ${inputs.username}</b>\n\n`
 
         mes += `<b>Tolov turi: Naqd</b>\n`
-        mes += `<b>To'liq narx: ${count}</b>\n`
+        mes += `<b>To'liq narx: ${count} so'm</b>\n`
     
         axios.post(URL_API, {
             chat_id: CHAT_ID,

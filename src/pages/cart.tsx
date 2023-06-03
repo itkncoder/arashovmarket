@@ -27,7 +27,7 @@ const Cart = () => {
                 <Box mb={"15px"} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
                     <Box display={"flex"} gap={"15px"} justifyContent={"end"} alignItems={"center"}>
                         <Link href={"/"}>
-                            <Button size={"sm"} display={"flex"} justifyContent={"center"} gap={"5px"} alignItems={"center"} >Ortga <FontAwesomeIcon icon={faRightFromBracket} /></Button>
+                            <Button display={"flex"} justifyContent={"center"} gap={"5px"} alignItems={"center"} >Ortga <FontAwesomeIcon icon={faRightFromBracket} /></Button>
                         </Link>
                     </Box>
                     <Text fontSize={"20px"} fontWeight={700} ><FontAwesomeIcon icon={faShoppingCart} /> Savatcha</Text>
