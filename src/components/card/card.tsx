@@ -54,7 +54,7 @@ const Card = ({i, count}: any) => {
             </Box>
             <Box mt={"5px"} display={"flex"} flexDirection={"column"} >
                 <Box display={"flex"} gap={"8px"} justifyContent={"start"} alignItems={"center"} >
-                    {!count && <Text fontSize={"18px"} >1<span style={{color: "#D79B00"}} >kg</span>:</Text>}
+                    {!count && <Text fontSize={"17px"} >1<span style={{color: "#D79B00"}} >{i.category == "Go'sht" ? "kg" : "donasi"}</span>:</Text>}
                     <Text fontSize={"15.5px"} >{!count ? i.price : i.price}<span style={{fontSize: "13px", color: "#D79B00"}} > so'm</span></Text>
                 </Box>
                 <Box m={"5px 0"} w={"100%"} >
