@@ -20,6 +20,7 @@ import {
     useDisclosure,
     Input,
     Text,
+    Select,
 } from '@chakra-ui/react'
 
 import { useContext, useEffect, useState } from 'react'
@@ -118,7 +119,11 @@ const Adminarashov = () => {
                             <Text mb={"-10px"} fontWeight={700} fontSize={"20px"} color={"#fff"} >To'ldiring:</Text>
                         </Box>
                         <Input onChange={e => setInputs({...inputs, title: e.target.value})} placeholder="Title..." w={"100%"} border={"1px solid rgba(256, 256, 256, 0.1)"} variant={"filled"} />
-                        <Input onChange={e => setInputs({...inputs, category: e.target.value})} placeholder="Category..." w={"100%"} border={"1px solid rgba(256, 256, 256, 0.1)"} variant={"filled"} />
+                        <Select defaultValue={"Go'sht"} value={inputs?.category} onChange={e => setInputs({...inputs, category: e.target.value})} placeholder='Category'>
+                            <option value="Go'sht">Go'sht</option>
+                            <option value='Somsa'>Somsa</option>
+                            <option value='Shashlik'>Shashlik</option>
+                        </Select>
                         <Input onChange={e => setInputs({...inputs, price: e.target.value})} placeholder="Price..." w={"100%"} border={"1px solid rgba(256, 256, 256, 0.1)"} variant={"filled"} />
                         <Input onChange={e => setInputs({...inputs, description: e.target.value})} placeholder="Description..." w={"100%"} border={"1px solid rgba(256, 256, 256, 0.1)"} variant={"filled"} />
                         <Input onChange={e => setInputs({...inputs, image: e.target.value})} placeholder="Image URL..." w={"100%"} border={"1px solid rgba(256, 256, 256, 0.1)"} variant={"filled"} />
